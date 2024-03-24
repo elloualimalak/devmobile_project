@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="0dp"
+                android:onClick="createCompte"
+                android:layout_weight="5"
+                android:src="@drawable/compte"></ImageView>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="0dp"
+            android:background="@drawable/corners3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/iid"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="Vous etes :"
+                android:textStyle="bold"></TextView>
+
+            <RadioButton
+                android:id="@+id/rd"
+                android:layout_width="1100dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="120dp"
+                android:layout_weight="1"
+                android:text="Recruteur cherche des CV et pose des annonces de travail"
+                android:textSize="13dp"></RadioButton>
+        </TableRow>
+        <TableRow
+            android:background="@color/lightgrey"
+            >
+            <RadioButton
+                android:id="@+id/rd2"
+                android:layout_width="900dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:textSize="13dp"
+                android:text="Candidat cherche des annonces et pose des CV"></RadioButton>
+        </TableRow>
+        <LinearLayout
+            android:background="@color/lightgrey"
+            >
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="50dp"
+                android:text="E-mail :"></TextView>
+
+            <EditText
+                android:id="@+id/edittextemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp"
+                android:hint=" E-mail"></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/lightgrey"
+            >
+            <TextView
+                android:id="@+id/villeview"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="50dp"
+                android:text="     Ville:"></TextView>
+
+            <EditText
+                android:id="@+id/ville"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp"
+                android:hint="Ville"></EditText>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@color/lightgrey"
+            >
+            <TextView
+                android:id="@+id/passeview"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:text="Mot de passe:"></TextView>
+
+            <EditText
+                android:id="@+id/mpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp"
+                android:hint="Mot de passe..."
+                android:inputType="textPassword"></EditText>
+        </LinearLayout>
+        <TableRow
+            android:background="@color/lightgrey"
+            >
+            <TextView
+                android:layout_marginTop="20dp"
+                android:text="                                        (au moins 5 caractères)"
+                ></TextView>
+        </TableRow>
+        <TableRow
+            android:background="@color/lightgrey"
+            >
+            <TextView
+                android:layout_marginTop="70dp"
+                android:textColor="@color/black"
+                android:text="_______________________________________________________________"></TextView>
+        </TableRow>
+        <LinearLayout
+            android:background="@color/lightgrey"
+            android:layout_marginTop="0dp"
+            android:layout_height="120dp">
+            <TextView
+                android:id="@+id/passeverif"
+                android:layout_width="100dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:text="Confirmer le mot de passe:"></TextView>
+
+            <EditText
+                android:id="@+id/mpassverif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:hint="Confirmer le mot de passe..."
+                android:inputType="textPassword"></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:background="@color/rose"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="20dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="En validant mon inscription,j'accepte les conditions général d'utilisation du site"
+                android:textColor="@color/white"></TextView>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
+                android:onClick="createCompte"
+                android:layout_marginRight="10dp"
+                android:text="Créer un compte!" />
+
+        </LinearLayout>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="730dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="30dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/annonce"></ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="0dp"
+            >
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="50dp"
+                android:text="Titre(*) :"></TextView>
+
+            <EditText
+                android:id="@+id/edittitre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp"
+                ></EditText>
+        </LinearLayout>
+        <LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:text="Catégorie(*)  :"></TextView>
+
+            <RadioButton
+                android:id="@+id/rad1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="la clientèle"
+                android:checked="true"></RadioButton>
+            <RadioButton
+                android:id="@+id/rad2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vente et Marketing"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="40dp"
+                android:text="Secteur   :"></TextView>
+
+            <RadioButton
+                android:id="@+id/sec3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Finance"
+                ></RadioButton>
+            <RadioButton
+                android:id="@+id/sec4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Santé"
+
+                />
+        </LinearLayout>
+        <LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:text="Type de contrat  :"></TextView>
+
+            <EditText
+                android:id="@+id/contrat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp"
+                ></EditText>
+
+        </LinearLayout>
+        <LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:text="Description   :"></TextView>
+
+            <EditText
+                android:id="@+id/desc"
+                android:padding="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="70dp"
+                ></EditText>
+        </LinearLayout>
+        <LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="70dp"
+                android:text="Ville  :"></TextView>
+
+            <CheckBox
+                android:id="@+id/checkbox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agadir"
+
+                ></CheckBox>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="214dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="150dp">
+            <CheckBox
+                android:id="@+id/checkbox9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Casablanca"
+                android:layout_marginLeft="150dp"
+
+                />
+            <CheckBox
+                android:id="@+id/checkbox8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rabat"
+                android:layout_marginLeft="150dp"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/corners5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="35dp"
+                    android:text="(*)Champs obligatoires"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"></TextView>
+                <Button
+                    android:layout_width="120dp"
+                    android:text="Suivant"
+                    android:backgroundTint="@color/blue"
+                    android:layout_marginLeft="50dp"
+                    android:onClick="suivant"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="50dp"></Button>
+            </LinearLayout>
+        </LinearLayout>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

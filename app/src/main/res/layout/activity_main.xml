@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TableRow
+            android:background="@drawable/rounded_corners"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="2"
+                android:src="@drawable/logo"></ImageView>
+
+            <TextView
+                android:id="@+id/conn"
+                android:layout_width="420dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="     Connexion"
+                android:textColor="@color/white"
+                android:textSize="30dp"></TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:text="E-mail :"
+                android:textSize="20dp"></TextView>
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/mail"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="30dp"
+                android:hint="Votre adresse e-mail..."></EditText>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/pass"
+                android:layout_marginTop="30dp"
+                android:text="Mot de passe :"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"></TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/mpass"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="40dp"
+                android:hint="Votre mot de passe..."
+                android:inputType="textPassword"></EditText>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/connexion"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp"
+                android:onClick="SeConnecter"
+                android:layout_marginRight="50dp"
+                android:backgroundTint="@color/blue"
+                android:text="Se connecter"></Button>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Garder ma session active" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/qct"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="Mot de passe oublié?"
+                android:textStyle="bold"></TextView>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/ou"
+                android:text="--------------------- ou ----------------------"
+                android:textSize="30dp"
+                android:layout_marginTop="10dp"></TextView>
+        </TableRow>
+        <TableRow
+            android:background="@drawable/corners2"
+            android:layout_marginTop="50dp"
+            android:layout_height="50dp"
+            >
+            <TextView
+                android:id="@+id/qqq"
+                android:layout_marginTop="40dp"
+                android:layout_height="40dp"
+                android:textSize="20dp"
+                android:text="         Vous n'avez pas encore de compte?"></TextView>
+
+        </TableRow>
+        <TableRow
+            android:background="@color/grey"
+            android:layout_height="10dp">
+            <Button
+                android:id="@+id/textView"
+                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:backgroundTint="@color/grey"
+                android:textColor="@color/blue"
+                android:onClick="inscription"
+                android:textSize="20dp"
+                android:text="  Inscrivez vous ici"></Button>></TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
